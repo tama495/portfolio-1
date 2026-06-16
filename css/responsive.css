@@ -1,0 +1,481 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px){
+/*味見ここから*/
+    .title1{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+        .title2{
+            width: 130%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+            animation: bgMove 25s ease-in-out infinite;
+        }
+    @keyframes bgMove{
+    0%{
+        transform:translateX(0);
+    }
+
+    50%{
+        transform:translateX(-23%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+    }
+     /* .title1{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .title2{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+
+    #mujuryoku{
+        font-size: 28px;
+    }
+
+    .muju1.show{
+        font-size: 24px;
+    }
+
+    .muju2.show{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .mint1{
+        font-size: 36px;
+    }
+    .agimi{
+        width: 90%;
+        font-size: 22px;
+        white-space: normal;
+        text-align: center;
+    }
+    .hikousi1{
+        width: 80%;
+        margin: 50px auto 0;
+        display: block;
+    }  
+    .hiko{
+        display: flex;
+        justify-content: center;
+    }
+    .hikousi2{
+        display:none;
+    }
+    #come2{
+        display:none;
+    }
+
+    @media screen and (max-width:768px){
+    .menu-btn{
+        display:block;
+        background:none;
+        border:none;
+        color:#fff;
+        font-size:40px;
+        margin-left:20px;
+        cursor:pointer;
+    }
+
+
+
+/*ヘッダー、ナビ*/
+.header {
+  height: 80px;
+  background-color: #000000c3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+z-index: 9999;
+
+}
+.header__container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  color: #fff;
+  padding: 0 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header__logo a {
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ハンバーガーボタンのスタイリング */
+input[type="checkbox"] {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.hamburger {
+  display: block;
+  width: 50px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.hamburger span::before {
+  top: -10px;
+}
+.hamburger span::after {
+  bottom: -10px;
+}
+input[type="checkbox"]:checked + .hamburger span {
+  background-color: transparent;
+}
+input[type="checkbox"]:checked + .hamburger span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked + .hamburger span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+/* メニューのスタイリング */
+.nav {
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  top: 80px;
+  right: -120%;
+  background-color: #000000d1;
+  color: #fff;
+  padding: 50px 0;
+  transition: all 0.5s;
+  z-index: 9999;
+}
+.nav ul{
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    width: 300px;
+}
+.nav ul li a{
+    display: block;
+    background-position: center top;
+    background-repeat: no-repeat;
+      /* background-position: center top; */
+}
+.nav ul li a:hover{
+  background-position: center top;
+}
+.nav__item{
+    width: auto;
+}
+
+.nav__item a {
+  display: block;
+  padding: 20px 0 20px 50px;
+  text-transform: uppercase;
+}
+.nav__item a:hover {
+  color: #000000b5;
+  background-color: #574379f1;
+}
+input[type="checkbox"]:checked ~ .nav {
+  right: 0;
+}
+.nav-list{
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+.nav ul li a{
+    /* text-indent:-9999px; */
+    display: block;
+    height:40px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/*ここまで*/
+
+
+
+}
+    #ac{
+        width: 90%;
+    }
+    .tpctitle1{
+        margin-bottom:0;
+        font-size: 23px;
+    }
+    .tpcmogi1{
+        width: 90%;
+        margin: 0 10px;
+    }
+    .tpcbh,
+    .tpcpo{
+        flex-direction: column;
+        text-align: center;
+        margin: 100px 0;
+    }
+    .cakeimage{
+        left: 50%;
+        width: 85%;
+        max-width: 500px;
+    }
+     /*.nav-header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:10px 20px;
+    }*/
+    .sp-logo{
+        width:180px;
+        height:auto;
+        display: block;
+    }
+    .logo{
+        display:none;
+    }
+    .mogi{
+        margin:0 10px;
+    }
+    .ufo1{
+        display: none;
+    }
+    .indextpc{
+        text-align: center;
+        border-bottom: 2px solid ;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*誕生日ここから*/
+/*親*/
+.bhcake{
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    margin-bottom: 200px;
+}
+/*親ここまで*/
+
+/*子ここから*/
+.bhcake-image{
+    position: absolute;
+    transform: translate(-50%, -50%) translateY(50px);
+    z-index: 2;
+}
+@keyframes fuwa1 {
+  0% {
+    transform:translate(-50%, -50%) translateY(50px);
+  }
+  100% {
+    transform:translate(-50%, -50%) translateY(60px);
+  }
+}
+.bhcake-image{
+    position: absolute;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(50px);
+    animation: fuwa1 1.5s ease-in-out infinite alternate;
+    z-index: 3;
+}
+
+.syutyu{
+    position: absolute;
+    width: 95vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hpb-image{
+    position: absolute;
+    transform: translate(-50%, -50%) translateY(-150px);
+    z-index: 3;
+}
+@keyframes fuwa2{
+  0% {
+    transform:translate(-50%, -50%) translateY(-150px);
+  }
+  100% {
+    transform:translate(-50%, -50%) translateY(-140px);
+  }
+}
+.hpb-image{
+    z-index: 9998;
+    position: absolute;
+    width:80vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(-150px);
+    animation: fuwa2 2s ease-in-out infinite alternate;
+    /* transform: rotate(-180deg);  justify-content: center; */
+}
+.hubuki-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 2;
+}
+
+/* 子ここまで */
+    #yoyaku{
+        margin:110px 20px 0 20px;
+    }
+    .image-select,
+    .image-select2,
+    .image-select3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-select figure,
+    .image-select2 figure,
+    .image-select3 figure{
+        width: 45%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .ice{
+        width: 100%;
+        max-width: 90%;
+    }
+       .cakeall{
+        display: block;
+    }
+    .cake{
+        width:80%;
+        margin-bottom: 7px;
+    }
+    .cake2{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .iceselect figure{
+        margin:20px 5px;
+    }
+
+    /*人気ここから*/
+    .ninnki{
+        font-size:25px;
+    }
+    .moginunki{
+        margin:10px 20px;
+    }
+    .oukanmogi{
+        display:flex;
+        align-items: center;
+        margin: 0;
+    }
+    .oukanmogi1{
+        display:flex;
+        align-items: center;
+        margin: 0 0 0 25px;
+    }
+
+    .ninki1,
+    .ninki2{
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+    .ice-top1{
+        width: 90%;
+    }
+    .ice-top2{
+        width: 85%;
+    }
+    .tpcmogi{
+        margin: 0;
+    }
+    .all45{
+        flex-wrap: wrap;
+        width:90%;
+        margin: 100px 10px;
+    }
+    .a123{
+        font-size:25px;
+    }
+    .a45{
+        font-size:20px;
+    }
+    .a23{
+        margin-top:50px;
+    }
+    .ninki45{
+        margin:0 10px 50px 10px;
+    }
+
+
+    .cn{
+        width:98%;
+    }
+    #freespace{
+        width: 90%;
+        height: 80px;
+    }
+/*コンタクトここまで*/
+/*flavorここから*/
+    .image-flavor,
+    .image-flavor2,
+    .image-flavor3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-flavor figure,
+    .image-flavor2 figure,
+    .image-flavor3 figure {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .image-flavor img,
+    .image-flavor2 img,
+    .image-flavor3 img {
+        width: 100%;
+        height: auto;
+    }
+
+}
